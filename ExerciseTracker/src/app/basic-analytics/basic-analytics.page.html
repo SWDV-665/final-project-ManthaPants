@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Basic Analytics</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Total Workout Duration:</ion-label>
+      <ion-note slot="end">{{ totalDuration }}</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Average Intensity:</ion-label>
+      <ion-note slot="end">{{ averageIntensity }}</ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>

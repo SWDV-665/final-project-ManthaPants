@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Workout Logging</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Type:</ion-label>
+    <ion-input [(ngModel)]="workout.type"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Duration:</ion-label>
+    <ion-input [(ngModel)]="workout.duration"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Intensity:</ion-label>
+    <ion-input [(ngModel)]="workout.intensity"></ion-input>
+  </ion-item>
+  <ion-button (click)="logWorkout()">Log Workout</ion-button>
+</ion-content>

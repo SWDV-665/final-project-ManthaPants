@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Exercise History</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let exercise of exerciseHistory">
+      <ion-label>{{ exercise.name }}</ion-label>
+      <ion-label>{{ exercise.duration }} minutes</ion-label>
+      <ion-label>Intensity: {{ exercise.intensity }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
